@@ -18,7 +18,7 @@ interface CurrencyConversionInterface extends ArgumentInterface
      * @throws InvalidIsEnabledDeterminerException
      */
     public function isEnabled(): bool;
-    
+
     /**
      * @return float
      */
@@ -28,4 +28,34 @@ interface CurrencyConversionInterface extends ArgumentInterface
      * @return string
      */
     public function getCurrencySymbol(): string;
+
+    /**
+     * @return int
+     */
+    public function getCurrencyPrecision(): int;
+
+    /**
+     * @return string
+     */
+    public function getCurrencyDecimalSymbol(): string;
+
+    /**
+     * @return string
+     */
+    public function getCurrencyGroupSymbol(): string;
+
+    /**
+     * @return int
+     */
+    public function getCurrencyGroupLength(): int;
+
+    /**
+     * @return string
+     */
+    public function getCurrencyFormat(): string;
+
+    /**
+     * @return string
+     */
+    public function getCurrencyAppendAtLast(): string;
 }
