@@ -11,7 +11,7 @@ namespace Klevu\FrontendApi\Service\Provider;
 interface CurrencyProviderInterface
 {
     /**
-     * @return array<string, array<string, float|string>>
+     * @return array<string, array<string, int|float|string>>
      */
     public function get(): array;
 }
